@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@100..900&display=block" rel="stylesheet">
+
+  <title>Calm Pairs</title>
+  <script type="module" crossorigin src="/assets/index-vVLVwueR.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-2cPe1so3.css">
+</head>
+
+<body>
+<div class="background"></div>
+
+<div class="game-container">
+  <div class="board no-visible"></div>
+
+  <div class="loading-screen">
+    <p class="loading-screen__text">loading calmness…</p>
+    <div class="flipping">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+  <!----------------------------------------------->
+
+  <div class="choice-level no-visible">
+    <p style="text-align: center">choose level</p>
+    <button data-level="easy" class="choice-level__button">easy</button>
+    <button data-level="basic" class="choice-level__button">basic</button>
+    <button data-level="medium" class="choice-level__button">medium</button>
+    <button data-level="hard" class="choice-level__button">hard</button>
+  </div>
+  <!----------------------------------------------->
+  <div class="active-game no-visible">
+    <div class="active-game__counters">
+      <div class="active-game__timer">time:&nbsp;<span class="time-counter">00:00</span></div>
+      <hr class="active-game__counters-line">
+      <div class="active-game__results">mistakes:&nbsp;<span class="mistakes-counter">0</span></div>
+    </div>
+
+    <div class="active-game__buttons">
+            <button class="buttons_restart-level">restart level</button>
+          <button class="buttons_another-level">another level</button>
+    </div>
+
+
+  </div>
+  <!----------------------------------------------->
+  <div class="results element-hidden">
+    <h1 class="results__title">game summary</h1>
+    <hr>
+
+    <div class="results__counters-wrapper">
+      <div class="results__time">
+        <h1 class="results__time-title">your time</h1>
+
+        <p class="results__time-previous">previous:
+          <span class="results__time-previous-counter">0</span>
+        </p>
+
+        <p class="results__time-current">current:
+          <span class="results__time-current-counter">0</span>
+        </p>
+
+        <hr>
+        <p class="results__time-compare">
+          <span class="results__time-compare-count">0</span>
+        </p>
+
+      </div>
+
+      <div class="results__mistakes">
+        <h1 class="results__mistakes-title">your mistakes</h1>
+
+        <p class="results__mistakes-previous">previous:
+          <span class="results__mistakes-previous-counter"></span>
+        </p>
+
+        <p class="results__mistakes-current">current:
+          <span class="results__mistakes-current-counter"></span>
+        </p>
+
+        <hr>
+        <p class="results__mistakes-compare">
+          <span class="results__mistakes-compare-count">0</span>
+        </p>
+
+      </div>
+    </div>
+
+    <hr>
+    <h1 class="results__status-message"></h1>
+    </div>
+
+
+
+  </div>
+  <!----------------------------------------------->
+</body>
+</html>
